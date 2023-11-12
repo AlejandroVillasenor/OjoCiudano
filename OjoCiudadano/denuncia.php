@@ -4,13 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Ojo Ciudadano</title>
+    <title>Denuncias</title>
     <meta name="description" content="Proyecto final de BD">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
     <link rel="stylesheet" href="assets/css/Projects-Grid-images.css">
+    <link rel="stylesheet" href="/assets/css/formularios.css">
+    <link rel="icon" href="assets/img/ojociudadanoVec.png" type="image/png">
 </head>
 
 <body>
@@ -18,9 +20,9 @@
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: #00000000;"><img data-bss-hover-animate="pulse" src="assets/img/OJO-CIUDADANOlogo.png" width="64" height="64"></span><span><a href="index.html"><span style="color: rgb(0, 0, 0);">Ojo Ciudadano</span></a></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" data-bss-hover-animate="pulse" href="denuncia.html" style="border-color: rgb(0, 0, 0);border-top-color: rgb(0,;border-right-color: 0,;border-bottom-color: 0);border-left-color: 0,;">Denuncia</a></li>
+                    <li class="nav-item"><a class="nav-link active" data-bss-hover-animate="pulse" href="denuncia.php" style="border-color: rgb(0, 0, 0);border-top-color: rgb(0,0,0);border-left-color: 0,;">Denuncia</a></li>
                     <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="instituciones.html">Instituciones</a></li>
-                    <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="consultas.html">Consulta</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="consultas.php">Consulta</a></li>
                     <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="about.html">Acerca de</a></li>
                 </ul>
             </div>
@@ -50,9 +52,9 @@
     <section class="position-relative py-4 py-xl-5">
         <h2 class="text-center mb-4">Denuncia de forma anónima&nbsp;</h2>
         <div class="container d-flex justify-content-center" style="margin-bottom: 2%;">
-            <div class="d-flex justify-content-around" style="width: 60%;"><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="width: 45%;">Denuncia un lugar</button><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="width: 45%;">Denuncia una persona</button></div>
+            <div class="d-flex justify-content-around" style="width: 60%;"><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="width: 45%;" id="boton1" href="#" onclick="mostrarFormulario1()">Denuncia un lugar</button><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="width: 45%;" id="boton2" href="#" onclick="mostrarFormulario2()">Denuncia un imputado</button></div>
         </div>
-        <div class="container position-relative">
+        <div class="container position-relative" id="formulario1">
             <div class="row d-flex justify-content-center" style="height: 70%;">
                 <div class="col-md-8 col-lg-6 col-xl-8 col-xxl-9">
                     <div class="card mb-5" style="height: 100%;">
@@ -81,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="container position-relative">
+        <div class="container position-relative" id="formulario2">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8 col-lg-6 col-xl-8 col-xxl-9">
                     <div class="card mb-5" style="height: 100%;">
@@ -116,6 +118,27 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <!-- Este es el codigo para cambiar entre formularios -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var boton1 = document.getElementById("boton1");
+            var boton2 = document.getElementById("boton2");
+            var formulario1 = document.getElementById("formulario1");
+            var formulario2 = document.getElementById("formulario2");
+
+            boton1.addEventListener("click", function() {
+                formulario2.style.display = "none";
+                formulario1.style.display = "block";
+            });
+
+            boton2.addEventListener("click", function() {
+                formulario1.style.display = "none";
+                formulario2.style.display = "block";
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

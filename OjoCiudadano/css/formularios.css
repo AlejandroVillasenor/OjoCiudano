@@ -1,0 +1,4 @@
+/* Escondemos el contenedor considerando que es de bootstrap */
+ #formulario2{
+    display: none;
+}
