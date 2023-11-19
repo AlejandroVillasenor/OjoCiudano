@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
     <link rel="stylesheet" href="assets/css/Projects-Grid-images.css">
+    <link rel="stylesheet" href="assets/css/estilosDenunciasAdmin.css">
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/funcionesListaImputados.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" href="assets/img/ojociudadanoVec.png" type="image/png">
 </head>
 
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
     <nav class="navbar navbar-expand-md fixed-top bg-body py-3">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: #00000000;"><img data-bss-hover-animate="pulse" src="assets/img/OJO-CIUDADANOlogo.png" width="64" height="64"></span><span><a href="adminIndex.php"><span style="color: rgb(0, 0, 0);">Administrador</span></a></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
@@ -49,7 +51,7 @@
             </div>
         </div>
     </section>
-    <footer class="text-center bg-dark" style="position:absolute;bottom:0;width:100%;">
+    <footer class="text-center bg-dark mt-auto">
         <div class="container text-white py-4 py-lg-5"><a class="btn btn-primary" role="button" data-bss-hover-animate="pulse" style="background: url(&quot;assets/img/googlelogo.png&quot;) no-repeat;background-size: contain;padding: 12px;border-style: none;" href="#"></a>
             <p class="text-muted mb-0" style="color: var(--bs-body-bg);"><span style="color: rgba(255, 255, 255, 0.75);">Este es un proyecto escolar</span></p>
             <p class="text-muted mb-0" style="color: var(--bs-body-bg);"><strong><span style="color: rgba(255, 255, 255, 0.75);">Copyright © 2023 Ojo Ciudadano</span></strong></p>

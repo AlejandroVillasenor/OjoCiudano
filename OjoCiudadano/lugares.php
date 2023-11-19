@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
     <link rel="stylesheet" href="assets/css/Projects-Grid-images.css">
+    <link rel="stylesheet" href="assets/css/estilosDenunciasAdmin.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/funcionListaLugares.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="icon" href="assets/img/ojociudadanoVec.png" type="image/png">
 </head>
 
-<body>
+<body style="display: flex; flex-direction: column; min-height: 100vh; margin: 0;">
     <nav class="navbar navbar-expand-md fixed-top bg-body py-3">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: #00000000;"><img data-bss-hover-animate="pulse" src="assets/img/OJO-CIUDADANOlogo.png" width="64" height="64"></span><span><a href="adminIndex.php"><span style="color: rgb(0, 0, 0);">Administrador</span></a></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
@@ -41,31 +45,13 @@
         <div class="container py-4 py-xl-5">
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
             <div class="col-11 col-md-12 col-xl-12 col-xxl-12" style="width: 100%;">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Column 1</th>
-                                    <th>Column 2</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Cell 1</td>
-                                    <td>Cell 2</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="table-responsive" id="contenedorLugares">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="text-center bg-dark" style="position:absolute;bottom:0;width:100%;">
+    <footer class="text-center bg-dark mt-auto">
         <div class="container text-white py-4 py-lg-5"><a class="btn btn-primary" role="button" data-bss-hover-animate="pulse" style="background: url(&quot;assets/img/googlelogo.png&quot;) no-repeat;background-size: contain;padding: 12px;border-style: none;" href="#"></a>
             <p class="text-muted mb-0" style="color: var(--bs-body-bg);"><span style="color: rgba(255, 255, 255, 0.75);">Este es un proyecto escolar</span></p>
             <p class="text-muted mb-0" style="color: var(--bs-body-bg);"><strong><span style="color: rgba(255, 255, 255, 0.75);">Copyright © 2023 Ojo Ciudadano</span></strong></p>
@@ -74,6 +60,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    
 </body>
 
 </html>

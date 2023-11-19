@@ -1,15 +1,14 @@
 window.onload = function Datos(){
-    cargarImputados();
+    cargarLugares();
 }
 
-
 //Carga los datos de los imputados
-function cargarImputados(){
+function cargarLugares(){
     $.ajax({
-        url: 'includes/mostrarImputados.php',
+        url: 'includes/mostrarLugares.php',
         type: 'post',
         success: function(res){
-            $("#contenedorImputados").html(res);
+            $("#contenedorLugares").html(res);
         },
         error: function(){
             alert('*ERROR - Archivo no encontrado...');
@@ -17,9 +16,8 @@ function cargarImputados(){
     });
 }
 
-
 //Funcion que permite eliminar registros
-function eliminarImputado(idDenuncia, numFila){
+function eliminarLugar(idDenuncia, numFila){
     Swal.fire({
         title: '¿Desear eliminar el registro?',
         text: "Una vez eliminado no podras recuperarlo",
@@ -32,7 +30,7 @@ function eliminarImputado(idDenuncia, numFila){
     }).then((result) => {
         if(result.isConfirmed){
             $.ajax({
-                url: 'includes/eliminarImputados.php',
+                url: 'includes/eliminarDenunciaLugar.php',
                 type: 'post',
                 datype: 'text',
                 data: 'ID='+idDenuncia,
@@ -59,7 +57,5 @@ function eliminarImputado(idDenuncia, numFila){
             })
         }
     })
+
 }
-
-
-

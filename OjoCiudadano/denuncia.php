@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="es-mx">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -11,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css">
     <link rel="stylesheet" href="assets/css/Projects-Grid-images.css">
-    <link rel="stylesheet" href="/assets/css/formularios.css">
+    <link rel="stylesheet" href="assets/css/formularios.css">
     <link rel="icon" href="assets/img/ojociudadanoVec.png" type="image/png">
 </head>
 
@@ -48,11 +47,15 @@
             </div>
         </div>
     </section>
-    <section></section>
     <section class="position-relative py-4 py-xl-5">
         <h2 class="text-center mb-4">Denuncia de forma anónima&nbsp;</h2>
         <div class="container d-flex justify-content-center" style="margin-bottom: 2%;">
-            <div class="d-flex justify-content-around" style="width: 60%;"><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="width: 45%;" id="boton1" href="#" onclick="mostrarFormulario1()">Denuncia un lugar</button><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="width: 45%;" id="boton2" href="#" onclick="mostrarFormulario2()">Denuncia un imputado</button></div>
+            <div class="d-flex justify-content-around" style="width: 60%;"><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="width: 45%;" id="boton1" href="#">Denuncia un lugar</button><button class="btn btn-primary" data-bss-hover-animate="pulse" type="button" style="width: 45%;" id="boton2" href="#">Denuncia un imputado</button></div>
+        </div>
+        <div class="d-flex flex-column align-items-center" display="block">
+            <div class="input-group" style="justify-content: center; margin-bottom: 2%;">
+                <div class="g-recaptcha" data-sitekey="6Le18wwpAAAAAFEmv0aimz9Mi8VACE0ZSsVNJWnI"></div>
+            </div>
         </div>
         <div class="container position-relative" id="formulario1">
             <div class="row d-flex justify-content-center" style="height: 70%;">
@@ -61,22 +64,30 @@
                         <div class="card-body p-sm-5" style="width: 100%;">
                             <h2 class="text-center mb-4">Completa los datos</h2>
                             <form method="post">
-                                <div class="d-flex d-xxl-flex justify-content-around align-items-xxl-center mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Nombre completo" style="width: 48%;margin: 5px;" required=""><input class="form-control" type="text" id="name-4" name="alias" placeholder="Alias" style="width: 48%;margin: 5px;" required=""></div>
+                                <div class="d-flex d-xxl-flex justify-content-around align-items-xxl-center mb-3"><input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombre completo" style="width: 48%;margin: 5px;" required=""><input class="form-control" type="text" id="alias" name="alias" placeholder="Alias" style="width: 48%;margin: 5px;" required=""></div>
                                 <div class="d-flex d-xl-flex flex-column justify-content-center align-items-center mb-3"><label class="form-label">Sexo</label>
                                     <div>
-                                        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Hombre</label></div>
-                                        <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Mujer</label></div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="Masculino" name="sexo" value="Masculino" required="">
+                                            <label class="form-check-label" for="sexoHombre">Hombre</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" id="Femenino" name="sexo" value="Femenino" required="">
+                                            <label class="form-check-label" for="sexoMujer">Mujer</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="mb-3"><textarea class="form-control" id="message-2" name="desc_imputado" rows="2" placeholder="Descripción del imputado" required=""></textarea></div>
-                                <div class="mb-3"><textarea class="form-control" id="message-1" name="desc_hechos" rows="2" placeholder="Descripción de los hechos" required=""></textarea></div>
+                                <div class="mb-3"><textarea class="form-control" id="desc_imputado" name="desc_imputado" rows="2" placeholder="Descripción del imputado" required="" style="resize: none;"></textarea></div>
+                                <div class="mb-3"><textarea class="form-control" id="desc_hechos" name="desc_hechos" rows="2" placeholder="Descripción de los hechos" required="" style="resize: none;" ></textarea></div>
                                 <div class="d-flex flex-column align-items-center"><label class="form-label">Lugar</label>
-                                    <div class="d-flex d-xxl-flex justify-content-around align-items-xxl-center mb-3"><input class="form-control" type="text" id="name-1" name="estado" placeholder="Estado" style="width: 48%;margin: 5px;" required=""><input class="form-control" type="text" id="name-3" name="municipio" placeholder="Municipio" style="width: 48%;margin: 5px;" required=""></div>
+                                    <div class="d-flex d-xxl-flex justify-content-around align-items-xxl-center mb-3"><input class="form-control" type="text" id="estado" name="estado" placeholder="Estado" style="width: 48%;margin: 5px;" required=""><input class="form-control" type="text" id="municipio" name="municipio" placeholder="Municipio" style="width: 48%;margin: 5px;" required=""></div>
                                 </div>
                                 <div class="d-flex flex-column align-items-center" style="margin-bottom: 2%;"><label class="form-label">Fecha de los acontecimientos</label>
-                                    <div class="d-flex d-xxl-flex justify-content-around mb-3" style="margin-right: -2px;padding-right: 0px;width: 50%;"><input class="form-control" type="date" style="width: 48%;"><input class="form-control" type="time" style="width: 48%;"></div>
+                                    <div class="d-flex d-xxl-flex justify-content-around mb-3" style="margin-right: -2px;padding-right: 0px;width: 50%;"><input class="form-control" type="date" style="width: 48%;" name="fecha" required="" id="fecha"><input class="form-control" type="time" style="width: 48%;" name="hora" required="" id="hora"></div>
                                 </div>
-                                <div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="pulse" type="submit">Send </button></div>
+                                <div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="pulse" onclick="imputados(event)" type="submit">Enviar</button></div>
+                                <div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -91,17 +102,17 @@
                             <h2 class="text-center mb-4">Completa los datos</h2>
                             <form method="post">
                                 <div class="d-flex flex-column align-items-center"><label class="form-label">Domicilio</label>
-                                    <div class="d-flex d-xxl-flex justify-content-around align-items-xxl-center mb-3" style="width: 100%;"><input class="form-control" type="text" id="name-5" name="calle" placeholder="Calle" style="width: 50%;margin: 5px;" required=""><input class="form-control" type="text" id="name-7" name="estado" placeholder="No. Interior" style="width: 25%;margin: 5px;" required=""><input class="form-control" type="text" id="name-8" name="municipio" placeholder="No. Exterior" style="width: 25%;margin: 5px;" required=""></div>
+                                    <div class="d-flex d-xxl-flex justify-content-around align-items-xxl-center mb-3" style="width: 100%;"><input class="form-control" type="text" id="calle" name="calle" placeholder="Calle" style="width: 50%;margin: 5px;" required=""><input class="form-control" type="text" id="numero_int" name="interior" placeholder="No. Interior" style="width: 25%;margin: 5px;"><input class="form-control" type="text" id="numero_ext" name="exterior" placeholder="No. Exterior" style="width: 25%;margin: 5px;" required=""></div>
                                 </div>
-                                <div class="mb-3"><textarea class="form-control" id="message-3" name="desc_domicilio" rows="2" placeholder="Características del domicilio" required=""></textarea></div>
+                                <div class="mb-3"><textarea class="form-control" id="caracteristicas" name="desc_domicilio" rows="2" placeholder="Características del domicilio" required="" style="resize: none;"></textarea></div>
                                 <div class="d-flex flex-column align-items-center"><label class="form-label">Lugar</label>
-                                    <div class="d-flex d-xxl-flex justify-content-around align-items-xxl-center mb-3"><input class="form-control" type="text" id="name-9" name="estado" placeholder="Estado" style="width: 48%;margin: 5px;" required=""><input class="form-control" type="text" id="name-10" name="municipio" placeholder="Municipio" style="width: 48%;margin: 5px;" required=""></div>
+                                    <div class="d-flex d-xxl-flex justify-content-around align-items-xxl-center mb-3"><input class="form-control" type="text" id="estado_lugar" name="estado" placeholder="Estado" style="width: 48%;margin: 5px;" required=""><input class="form-control" type="text" id="municipio_lugar" name="municipio" placeholder="Municipio" style="width: 48%;margin: 5px;" required=""></div>
                                 </div>
-                                <div class="mb-3"><textarea class="form-control" id="message-4" name="desc_hechos" rows="2" placeholder="Descripción de los hechos" required=""></textarea></div>
+                                <div class="mb-3"><textarea class="form-control" id="desc_hechos2" name="desc_hechos2" rows="2" placeholder="Descripción de los hechos" required="" style="resize: none;"></textarea></div>
                                 <div class="d-flex flex-column align-items-center" style="margin-bottom: 2%;"><label class="form-label">Fecha de los acontecimientos</label>
-                                    <div class="d-flex d-xxl-flex justify-content-around mb-3" style="margin-right: -2px;padding-right: 0px;width: 50%;"><input class="form-control" type="date" style="width: 48%;"><input class="form-control" type="time" style="width: 48%;"></div>
+                                    <div class="d-flex d-xxl-flex justify-content-around mb-3" style="margin-right: -2px;padding-right: 0px;width: 50%;"><input class="form-control" type="date" style="width: 48%;" required="" name="fecha" id="fecha_hechos"><input class="form-control" type="time" style="width: 48%;" required="" name="hora" id="hora_hechos"></div>
                                 </div>
-                                <div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="pulse" type="submit">Send </button></div>
+                                <div><button class="btn btn-primary d-block w-100" data-bss-hover-animate="pulse" onclick="lugares(event)" type="submit">Enviar</button></div>
                             </form>
                         </div>
                     </div>
@@ -127,18 +138,20 @@
             var formulario2 = document.getElementById("formulario2");
 
             boton1.addEventListener("click", function() {
-                formulario2.style.display = "none";
-                formulario1.style.display = "block";
-            });
-
-            boton2.addEventListener("click", function() {
                 formulario1.style.display = "none";
                 formulario2.style.display = "block";
             });
+
+            boton2.addEventListener("click", function() {
+                formulario1.style.display = "block";
+                formulario2.style.display = "none";
+            });
         });
     </script>
-
-
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src ="assets/js/formularios.js"></script>
 </body>
-
 </html>

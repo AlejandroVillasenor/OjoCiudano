@@ -12,7 +12,7 @@
     $numfila = 2; //Para identificar registros en la tabla 
     if($row){
         $idAdmin = $row['id_administrador'];
-        $sql = "SELECT * FROM denuncia_imputado WHERE id_administrador = '$idAdmin'";
+        $sql = "SELECT * FROM denuncia_lugar WHERE id_administrador = '$idAdmin'";
         $res = $con->query($sql);
         $fila = $res->rowCount();
         if($fila > 0){
@@ -21,13 +21,13 @@
                 <thead>
                     <tr>
                         <th style='text-align: center'>id_Denuncia</th>
-                        <th style='text-align: center'>Nombre</th>
-                        <th style='text-align: center'>Alias</th>
-                        <th style='text-align: center'>Genero</th>
-                        <th style='text-align: center'>Desc_imputado</th>
-                        <th style='text-align: center'>Des_hechos</th>
+                        <th style='text-align: center'>Calle</th>
+                        <th style='text-align: center'>Num. Int</th>
+                        <th style='text-align: center'>Num. Ext</th>
+                        <th style='text-align: center'>Caracteristicas</th>
                         <th style='text-align: center'>Estado</th>
                         <th style='text-align: center'>Municipio</th>
+                        <th style='text-align: center'>Desc. Hechos</th>
                         <th style='text-align: center'>Fecha</th>
                         <th style='text-align: center'>Hora</th>
                         <th style='text-align: center'>Opciones</th>
@@ -36,33 +36,37 @@
                 <tbody>
             ";
             while($row = $res -> fetch(PDO::FETCH_ASSOC)){
-                $idDenuncia = $row["id_denunciaimputado"];
-                $nombre = $row["nombre"];
-                $alias = $row["alias"];
-                $genero = $row["genero"];
-                $desc_imputado = $row["desc_imputado"];
+                $idDenuncia = $row["id_denuncialugar"];
+                $calle = $row["calle"];
+                $numInt = $row["numero_int"];
+                $numExt = $row["numero_ext"];
+                $caracteristicas = $row["caracteristicas"];
+                $municipio = $row["municipio_lugar"];
+                $estado_lugar = $row["estado_lugar"];
                 $desc_hechos = $row["desc_hechos"];
-                $municipio_hecho = $row["municipio_hechos"];
-                $estado_hecho = $row["estado_hechos"];
                 $fecha_hechos = $row["fecha_hechos"];
                 $hora_hechos = $row["hora_hechos"];
+                //Se combrueba si esta vacio el Número Interior
+                if(isset($numInt)){
+                    $numInt = 'N/A';
+                }
                 echo "
                     <tr id='fila$numfila'>
                         <td>$idDenuncia</td>
-                        <td>$nombre</td>
-                        <td>$alias</td>
-                        <td>$genero</td>
-                        <td>$desc_imputado</td>
+                        <td>$calle</td>
+                        <td>$numInt</td>
+                        <td>$numExt</td>
+                        <td>$caracteristicas</td>
+                        <td>$estado_lugar</td>
+                        <td>$municipio</td>
                         <td>$desc_hechos</td>
-                        <td>$municipio_hecho</td>
-                        <td>$estado_hecho</td>
                         <td>$fecha_hechos</td>
                         <td>$hora_hechos</td>
                         <td>
-                            <button type='button' class='BotonesEditar' onclick=\"window.location.href='denunciaImputado_modifica.php?ID=$idDenuncia'\">
+                            <button type='button' class='BotonesEditar' onclick=\"window.location.href='denunciaLugar_modifica.php?ID=$idDenuncia'\">
                                 <img src='assets/img/editarIcono.png' alt='IconoEditar' class='imagenesOpciones'>
                             </button>
-                            <button type='button' class='BotonesBorrar' onclick='eliminarImputado($idDenuncia, $numfila)'>
+                            <button type='button' class='BotonesBorrar' onclick='eliminarLugar($idDenuncia, $numfila)'>
                                 <img src='assets/img/eliminarIcono.png' alt='IconoBorrar' class='imagenesOpciones'>
                             </button> 
                         </td>

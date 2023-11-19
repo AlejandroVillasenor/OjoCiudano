@@ -23,9 +23,6 @@ class User extends Conexion{
             $this->username = $currentUser['nombre'];
         }
     }
-    //https://www.youtube.com/watch?v=Tb-_cEAsp4s&t=1295s
-
-    // nombre y contrasena en la tabla administrador
 }
 
 
