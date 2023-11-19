@@ -54,7 +54,7 @@
         </div>
         <div class="d-flex flex-column align-items-center" display="block">
             <div class="input-group" style="justify-content: center; margin-bottom: 2%;">
-                <div class="g-recaptcha" data-sitekey="6Le18wwpAAAAAFEmv0aimz9Mi8VACE0ZSsVNJWnI"></div>
+                <div class="g-recaptcha" data-sitekey="YOURKEY"></div>
             </div>
         </div>
         <div class="container position-relative" id="formulario1">

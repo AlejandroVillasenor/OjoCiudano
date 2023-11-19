@@ -6,7 +6,7 @@ $con = $conexion->ConexionBD();
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $captcha = $_POST['captcha'];
-$secretkey = "6Le18wwpAAAAAPB8Wq1VnPRz6rPlMn2iAFwjx9GR";
+$secretkey = "YOURKEY";
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$captcha&remoteip=$ip");
 $atributos = json_decode($response,TRUE);
 
