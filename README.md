@@ -1,27 +1,30 @@
 # OjoCiudano
-Este proyecto, desarrollado como parte de la iniciativa en el Centro Universitario de Ciencias Exactas e Ingenierías (CUCEI), tiene como objetivo crear una plataforma de concientización y colaboración ciudadana en la lucha contra el narcotráfico en México. Aquí, te proporcionamos una guía para entender y contribuir al proyecto:
+This project, developed as part of a final database course project at the Centro Universitario de Ciencias Exactas e INgenierías (CUCEI), aims to create a platform for awareness and citizen collaboration in the fight against drug trafficking in Mexico. Here, we provide a guide to understand and contribute to the project:
 
-Características Principales:
+Key Features:
 
-Estadísticas del Narcotráfico: Accede a datos estadísticos reales sobre el narcotráfico en México para comprender y analizar la situación.
+Drug Trafficking Statistics: Access real statistical data on drug trafficking in Mexico to comprehend and analyze the situation.
 
-Recursos de Ayuda: Encuentra información detallada y enlaces a instituciones que brindan apoyo a aquellos afectados por el consumo de drogas.
+Helpful Resources: Find detailed information and links to institutions providing support to those affected by drug consumption.
 
-Sistema de Denuncias Anónimas: Colabora de manera segura mediante nuestro sistema de denuncias anónimas. Contribuye a construir comunidades más seguras y libres de drogas.
+Anonymous Reporting System: Collaborate securely through our anonymous reporting system. Contribute to building safer and drug-free communities.
 
-Instrucciones de Uso:
+Usage Instructions:
 
-Registro e Inicio de Sesión: Si eres un administrador, inicia sesión para acceder a las denuncias y estadísticas. Los usuarios generales pueden explorar la plataforma sin necesidad de registro.
+Registration and Login: If you are an administrator, log in to access reports. General users can explore the platform without the need for registration.
 
-Exploración de Estadísticas: Descubre datos estadísticos basados en datos abiertos sobre el narcotráfico para obtener una perspectiva clara de la situación actual.
+Exploring Statistics: Discover statistical data based on open data about drug trafficking for a clear perspective on the current situation.
 
-Recursos de Ayuda: Encuentra enlaces a instituciones que ofrecen apoyo a aquellos que enfrentan problemas de consumo de estupefacientes.
+Helpful Resources: Find links to institutions offering support to those facing substance abuse issues.
 
-Denuncias Anónimas: Utiliza nuestro sistema seguro para informar sobre actividades sospechosas relacionadas con el narcotráfico.
+Anonymous Reports: Use our secure system to report suspicious activities related to drug trafficking.
 
-Colaboración:
+Collaboration:
 
-Este proyecto se realizó de forma colaborativa.
+This project was carried out collaboratively.
+
+Disclaimer:
+This project was developed for educational purposes. The information provided on this platform is based on open data provided by the government. We do not assume responsibility for the misuse of the presented information or the actions derived from it. This project is not affiliated with any governmental entity or criminal group. Participation in this project implies understanding and acceptance of this disclaimer. Remember that this project is an educational initiative and does not seek to encourage or endorse any illegal or harmful activities.
 
 ![image](https://github.com/AlejandroVillasenor/OjoCiudano/assets/92410341/ada54e96-71f8-42d9-89e2-977698b34548)
 
