@@ -13,7 +13,7 @@ Instrucciones de Uso:
 
 Registro e Inicio de Sesión: Si eres un administrador, inicia sesión para acceder a las denuncias y estadísticas. Los usuarios generales pueden explorar la plataforma sin necesidad de registro.
 
-Exploración de Estadísticas: Descubre datos estadísticos sobre el narcotráfico para obtener una perspectiva clara de la situación actual.
+Exploración de Estadísticas: Descubre datos estadísticos basados en datos abiertos sobre el narcotráfico para obtener una perspectiva clara de la situación actual.
 
 Recursos de Ayuda: Encuentra enlaces a instituciones que ofrecen apoyo a aquellos que enfrentan problemas de consumo de estupefacientes.
 
