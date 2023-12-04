@@ -1,5 +1,5 @@
 # OjoCiudano
-This project, developed as part of a final database course project at the Centro Universitario de Ciencias Exactas e INgenierías (CUCEI), aims to create a platform for awareness and citizen collaboration in the fight against drug trafficking in Mexico. Here, we provide a guide to understand and contribute to the project:
+This project, developed as part of a final database course project at the Centro Universitario de Ciencias Exactas e Ingenierías (CUCEI), aims to create a platform for awareness and citizen collaboration in the fight against drug trafficking in Mexico. Here, we provide a guide to understand and contribute to the project:
 
 **Key Features:**
 
